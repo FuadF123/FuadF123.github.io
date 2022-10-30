@@ -1,0 +1,300 @@
+/* Global */
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Header */
+header {
+  height: 95px;
+  width: 100%;
+  background-color: rgb(239, 86, 68, 0.9);
+  position: fixed;
+  z-index: 10;
+}
+
+header .header-left {
+  float: left;
+  color: #faf3eb;
+  padding: 20px 40px;
+}
+
+.logo1 {
+  font-size: 25px;
+}
+
+.logo2 {
+  font-size: 20px;
+}
+.header-right {
+  float: right;
+  margin-right: -1px;
+}
+
+.header-right a {
+  line-height: 95px;
+  padding: 0 30px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+  font-size: 20px;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+header .menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 18px ;
+  display: none;
+}
+
+/* Main */
+.main {
+  padding-top: 95px;
+  background-color: #faf3eb;
+  display: flex;
+  justify-content: space-around;
+}
+
+.title-chicken {
+  width: 50%;
+  color: #272727;
+  /* padding: 40px 120px; */
+  /* padding: 40px 0px 40px 120px; */
+}
+
+.title-text {
+  margin-top: 40px;
+  margin-left: 120px;
+}
+
+.title-button {
+  margin-left: 110px;
+}
+
+.title-chicken h1 {
+  font-size: 70px;
+  margin-bottom: -10px;
+}
+
+.title-chicken span {
+  font-size: 70px;
+  font-weight: normal;
+}
+
+.title-chicken a {
+  text-decoration: none;
+  color: #ef5644;
+}
+
+.title-chicken .btn {
+  border: 2px solid #ef5644;
+  width: 190px;
+  padding: 15px;
+  margin: 20px 10px;
+  cursor: pointer;
+  box-shadow: 0 7px #ed5949;
+}
+.title-chicken .btn:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+.image-chicken {
+  width: 50%;
+  background-image: url("/assets/ayamgeprek.jpg");
+  background-repeat: no-repeat;
+  /* background-position: fit; */
+  background-size: cover;
+}
+
+.image-chicken img {
+  width: 100%;
+  visibility: hidden;
+}
+
+@media all and (max-width: 1100px) {
+  /* .main {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .title-chicken {
+    width: 100%;
+  }
+  .image-chicken {
+    width: 100%;
+  } */
+}
+
+@media all and (max-width: 670px) {
+  /* .title-chicken {
+    width: 100%;
+    margin: auto;
+  }
+  .title-chicken h1 {
+    font-size: 60px;
+  }
+  .title-chicken span {
+    font-size: 30px;
+  } */
+}
+
+/* Body */
+a {
+  text-decoration: none;
+}
+.container-body {
+  background-color: #faf3eb;
+  margin: 0px auto;
+  padding-top: 10px;
+}
+.heading h2 {
+  padding: 15px 0px 30px 0px;
+  text-align: center;
+}
+
+.menu-left {
+  display: flex;
+  flex-direction: row;
+  height: 670px;
+}
+
+.menu-right {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 670px;
+}
+
+.menu-image {
+  width: 50%;
+}
+
+.menu-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.menu-desc {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.menu-desc .content {
+  width: 400px;
+  margin: auto;
+}
+
+.content p {
+  padding-top: 4px;
+  font-size: 14px;
+}
+
+.btn {
+  padding: 15px 24px;
+  background-color: #faf3eb;
+  color: #ef5644;
+  font-weight: bold;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ef5644;
+}
+.btn:hover {
+  background-color: #b9cee6;
+  border-style: solid;
+  border-color: #b9cee6;
+  color: white;
+}
+
+/* Footer */
+
+footer {
+  background-color: rgb(239, 86, 68);
+  padding: 70px 0;
+}
+footer .container {
+  max-width: 1170px;
+  margin: auto;
+}
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer ul {
+  list-style: none;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  /* color: #bbbbbb; */
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #002fff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
