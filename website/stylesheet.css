@@ -62,7 +62,7 @@ header .menu-icon {
   color: white;
   float: right;
   font-size: 25px;
-  padding: 18px ;
+  padding: 18px;
   display: none;
 }
 
@@ -77,8 +77,6 @@ header .menu-icon {
 .title-chicken {
   width: 50%;
   color: #272727;
-  /* padding: 40px 120px; */
-  /* padding: 40px 0px 40px 120px; */
 }
 
 .title-text {
@@ -121,41 +119,14 @@ header .menu-icon {
 
 .image-chicken {
   width: 50%;
-  background-image: url("/assets/ayamgeprek.jpg");
+  background-image: url("assets/ayamgeprek.jpg");
   background-repeat: no-repeat;
-  /* background-position: fit; */
   background-size: cover;
 }
 
 .image-chicken img {
   width: 100%;
   visibility: hidden;
-}
-
-@media all and (max-width: 1100px) {
-  /* .main {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .title-chicken {
-    width: 100%;
-  }
-  .image-chicken {
-    width: 100%;
-  } */
-}
-
-@media all and (max-width: 670px) {
-  /* .title-chicken {
-    width: 100%;
-    margin: auto;
-  }
-  .title-chicken h1 {
-    font-size: 60px;
-  }
-  .title-chicken span {
-    font-size: 30px;
-  } */
 }
 
 /* Body */
