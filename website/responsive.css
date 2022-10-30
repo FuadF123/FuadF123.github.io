@@ -101,10 +101,11 @@
   .title-text {
     width: 50%;
     margin: 0 auto;
+    padding-left: 20px;
   }
 
   .title-chicken h1 {
-    font-size: 25px;
+    font-size: 40px;
     margin-bottom: -10px;
   }
 
@@ -143,7 +144,7 @@
     margin: 10px auto;
   }
 
-  .btn{
+  .btn {
     margin-bottom: 10px;
   }
 
